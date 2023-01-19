@@ -15,7 +15,7 @@ CREATE TABLE `clientes` (
   `cidade` varchar(100) NOT NULL,
   `estado` varchar(3) NOT NULL,
   `update_at` timestamp DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `created_at` timestamp NOT NULL CURRENT_TIMESTAMP,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
